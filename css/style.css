@@ -50,17 +50,17 @@
 .flex-banda img{
     width: 100%;
     height: auto;
-    margin-top: 150px;    
+    margin-top: 50px;    
 }
 
 /* TITULO NOVEDADES */
-h1{
+.tituloNovedades{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     color: tomato;
     text-align: center;
-    font-size: 40%;
     margin-top: 80px;
+    font-size: 70px;
 
 }
 
@@ -93,6 +93,7 @@ h1{
 .flex-footer div p{
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
     font-size: 20px;
     text-align: end;
 }
@@ -102,8 +103,6 @@ h1{
     align-items: center;
 }
 
-@media (max-width: 500px){
-    #sitioHeader{
-        flex-direction: column;
-    }   
-}
+
+
+
