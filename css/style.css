@@ -1,7 +1,109 @@
+*{
+    padding: 0;
+    margin: o;
+}
 /* header */
 
-.nav justify-content-center .nav-item .nav-link{
-    font-family: 'Ubuntu', sans-serif important!;
-    font-size: 100px;
+.sitioHeader{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+.sitioHeader .logo img{
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
+}
+.sitioHeader .menu ul{
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+}
+.sitioHeader .menu ul li{
+    margin: 0 20px;
+}
+.sitioHeader .menu ul li a{
+    text-decoration: none;
+    background-color: rgb(255, 38, 0);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+}
+.sitioHeader .menu ul li a:hover{
+    background-color: white;
+    color: black;
+}
 
+/* foto banda inicio
+ */
+.flex-banda{
+    display: flex;
+}
+.flex-banda img{
+    width: 100%;
+    height: auto;
+    margin-top: 150px;    
+}
+
+/* TITULO NOVEDADES */
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: tomato;
+    text-align: center;
+    font-size: 40%;
+    margin-top: 80px;
+
+}
+
+/* NOTICIAS */
+.flex-container{
+    display: flex;
+    gap: 15px;
+    margin: 20px;
+}
+.flex-container .flex-item img{
+    width: 100%;
+    height: auto;
+    margin-top: 80px;    
+}
+.flex-container .flex-item p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+    color: black;
+}
+
+/* footer */
+.flex-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 30px;
+}
+.flex-footer div p{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-align: end;
+}
+.flex-footer .redes ul li{
+    display: inline;
+    padding: 0 5px;
+    align-items: center;
+}
+
+@media (max-width: 500px){
+    #sitioHeader{
+        flex-direction: column;
+    }   
 }
